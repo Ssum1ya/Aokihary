@@ -50,6 +50,7 @@ public class PersMagic extends Pers implements HealSkills {
         @Override
         public void attackSkill(Pers enemy) {
             //TODO: с учетом зашиты
+            System.out.println(!(enemy.getClass().equals(this.getClass())));
             enemy.setHp((int) (enemy.getHp() - getMana() * 0.35));
             setMana((int) (getMana() * 0.5));
             System.out.println("Маг использует свой скилл при этом теряя 50 % mana, mana -- " + getMana());

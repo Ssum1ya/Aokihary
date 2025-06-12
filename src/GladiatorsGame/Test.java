@@ -13,10 +13,11 @@ public class Test {
         SpecialAttackSkill warriorAttackSkill = (SpecialAttackSkill) persWarrior.getWeapon();
         HealSkills warriorHealSkills = (HealSkills) persWarrior;
 
-        persWarrior.getWeapon().attack(persMagic);
-        magicHealSkills.healHp();
+//        persWarrior.getWeapon().attack(persMagic);
+//        magicHealSkills.healHp();
         warriorAttackSkill.attackSkill(persMagic);
-        persMagic.getWeapon().attack(persWarrior);
         magicAttackSkill.attackSkill(persWarrior);
+//        persMagic.getWeapon().attack(persWarrior);
+//        magicAttackSkill.attackSkill(persWarrior);
     }
 }

@@ -51,6 +51,7 @@ public class PersWarrior extends Pers implements HealSkills {
         @Override
         public void attackSkill(Pers enemy) {
             //TODO: с учетом зашиты
+            System.out.println(enemy.getClass().equals(this.getClass()));
             enemy.setHp((int) (enemy.getHp() - getHp() * 0.4));
             setHp((int) (getHp() * 0.5));
             System.out.println("Воин использует свой скилл при этом теряя 50 % hp, hp -- " + getHp());
